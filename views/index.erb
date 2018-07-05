@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Rondom</title>
+    <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Knewave" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <% font= ['shrikhand', 'lobster', 'knewave'] %>
+      <div class='content <%= p font[rand(3)] %>'>
+        <h1><% sentence = ['Thank you a lot, thank you.', 'Are you Okay?', 'That is so annoying.', 'Oh, it is gross.', 'That is very very funny.', 'Looks like I overestimated the number of his brain cells.', 'Maybe it is in her genes.'] %><% 1.times do %><%= p sentence[rand(7)] %><% end %></h1>
+      </div>
+    </div>
+  </body>
+</html>
